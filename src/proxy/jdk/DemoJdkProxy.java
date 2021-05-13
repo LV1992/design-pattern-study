@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * 基于jdk的动态代理实现例子
+ * 基于jdk的动态代理实现例子（jdk动态代理只能对接口进行代理）
  * 1.提供实例化代理对象的getInstance方法，外部调用该方法来获取代理对象
  * 2.重写InvocationHandler的invoke方法，调用method.invoke
  */
@@ -21,7 +21,7 @@ public class DemoJdkProxy implements InvocationHandler {
         Class<? extends DemoJdkSubject> clazz = subject.getClass();
         ClassLoader classLoader = clazz.getClassLoader();
         Class<?>[] interfaces = clazz.getInterfaces();
-        //主要使用jdk这个方法来实例化代理对象
+        //主要使用jdk这个方法来实例化代理对象（实例化接口）
         DemoJdkSubject instance = (DemoJdkSubject)Proxy.newProxyInstance(classLoader, interfaces, this);
         return instance;
     }
