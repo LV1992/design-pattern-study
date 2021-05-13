@@ -1,5 +1,4 @@
 package proxy.jdk;
-
 /**
  * jdk动态代理的主题实现
  */
