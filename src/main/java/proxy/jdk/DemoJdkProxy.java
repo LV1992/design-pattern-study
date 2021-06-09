@@ -1,4 +1,5 @@
 package proxy.jdk;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -21,7 +22,7 @@ public class DemoJdkProxy implements InvocationHandler {
         ClassLoader classLoader = clazz.getClassLoader();
         Class<?>[] interfaces = clazz.getInterfaces();
         //主要使用jdk这个方法来实例化代理对象（实例化接口）
-        DemoJdkSubject instance = (DemoJdkSubject)Proxy.newProxyInstance(classLoader, interfaces, this);
+        DemoJdkSubject instance = (DemoJdkSubject) Proxy.newProxyInstance(classLoader, interfaces, this);
         return instance;
     }
 

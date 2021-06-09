@@ -5,7 +5,7 @@ package proxy.cglib;
  */
 public class SampleClass {
 
-    public void runIt(){
+    public void runIt() {
         System.out.println("运行了");
     }
 }

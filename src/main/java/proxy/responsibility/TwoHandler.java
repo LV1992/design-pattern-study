@@ -13,7 +13,7 @@ public class TwoHandler extends ResponsibilityHandler {
             System.out.println("不需要第二个处理者处理===");
         }
         ResponsibilityHandler nextHandler = getNextHandler();
-        if (nextHandler != null){
+        if (nextHandler != null) {
             nextHandler.handle(request);
         }
     }

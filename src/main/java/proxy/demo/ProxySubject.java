@@ -3,7 +3,7 @@ package proxy.demo;
 /**
  * 代理类
  */
-public class ProxySubject implements Subject{
+public class ProxySubject implements Subject {
 
     private Subject subject;
 
