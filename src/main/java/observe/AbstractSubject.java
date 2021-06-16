@@ -1,4 +1,4 @@
-package proxy.observe;
+package observe;
 
 import java.util.ArrayList;
 import java.util.List;

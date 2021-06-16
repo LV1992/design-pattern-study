@@ -1,4 +1,4 @@
-package proxy.responsibility;
+package responsibility;
 
 /**
  * 责任链客户端类

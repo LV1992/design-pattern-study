@@ -1,4 +1,4 @@
-package proxy.observe;
+package observe;
 
 /**
  * 观察者模式，观察者(具体观察者)
